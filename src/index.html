@@ -6,8 +6,29 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 </head>
 <body>
   <app-root></app-root>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/custome.js"></script>
+  <script src="assets/js/main.js"></script>        
+  <script src="assets/js/plugins.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    </script>
+    
 </body>
 </html>
