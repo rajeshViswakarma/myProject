@@ -1,0 +1,35 @@
+<div class="site-main" id="sTop">
+    <div class="site-header">
+        <div class="main-header">
+            <div class="container-fluid">
+                <div id="menu-wrapper" class="row">
+                    <div class="row">
+                        
+                        <nav class="navbar navbar-inverse" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a routerLink="/top" class="navbar-brand"><img src="{{logo}}" alt="" width="120" /> </a>
+                                <div id="main-nav" class="collapse navbar-collapse">
+                                    <ul class="menu-first nav navbar-nav" style="margin-right: 20px;">
+                                        <li (click)= "getActiveTab('home')" [class.active]="activetab ==='home'"><a routerLink="/">Home</a></li>
+                                        <li (click)= "getActiveTab('about')" [class.active]="activetab ==='about'"><a routerLink="/about">About Us</a></li>
+                                        <li (click)= "getActiveTab('portfolio')"[class.active]="activetab ==='portfolio'"><a routerLink="/portfolio">Portfolio</a></li>
+                                        <li (click)= "getActiveTab('blog')" [class.active]="activetab ==='blog'"><a routerLink="/blog">Blog Entries</a></li>
+                                        <li><a href="#" class="external" target="_parent" rel="nofollow">External</a></li> 
+                                        <li (click)= "getActiveTab('contact-us')" [class.active]="activetab ==='contact-us'"><a routerLink="/contact-us">Contact</a></li>                                 
+                                    </ul>                                    
+                                </div> <!-- /.main-menu -->
+                            </div>
+                        </nav>
+                      
+                    </div> <!-- /.row -->
+                </div> <!-- /#menu-wrapper -->                        
+            </div> <!-- /.container -->
+        </div> <!-- /.main-header -->
+    </div> <!-- /.site-header -->
+</div> <!-- /.site-main -->

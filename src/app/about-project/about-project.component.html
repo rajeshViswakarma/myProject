@@ -1,31 +1,47 @@
+<app-navigation></app-navigation>
+
+        <div class="intro">
+            <div class="container">
+                    <br/><br/><br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>{{about.h4}}</h4>
+                        <h6>{{about.h6}}</h6>
+                        <div class="border-button"><a href="{{about.portfolioLink}}">{{about.moreButton}}</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+
 <section id="about" class="page-section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
                 <div class="service-item first-service">
                     <div class="icon">
-                        <img src="../assets/img/first-service-icon.png" alt="">
+                        <img src="{{imagePath}}" alt="">
                     </div>
-                    <h4>Mobile Ready</h4>
-                    <p>Aenean ac ultricies nisl. Nullam vitae aliquam velit. Vestibulum a ex eget arcu accumsan luctus at vitae urna. Vestibulum ante ipsum primis in faucibus.</p>
+                    <h4>{{about.serviceH4}}</h4>
+                    <p>{{about.serviceP1}}</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="service-item second-service">
                     <div class="icon">
-                        <img src="../assets/img/second-service-icon.png" alt="">
+                        <img src="{{secondService}}" alt="">
                     </div>
-                    <h4>HTML CSS</h4>
-                    <p>Aenean ac ultricies nisl. Nullam vitae aliquam velit. Vestibulum a ex eget arcu accumsan luctus at vitae urna. Vestibulum ante ipsum primis in faucibus.</p>
+                    <h4>{{about.service2H4}}</h4>
+                    <p>{{about.service2P2}}</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="service-item third-service">
                     <div class="icon">
-                        <img src="../assets/img/third-service-icon.png" alt="">
+                        <img src="{{thirdService}}" alt="">
                     </div>
-                    <h4>Responsive Design</h4>
-                    <p>Aenean ac ultricies nisl. Nullam vitae aliquam velit. Vestibulum a ex eget arcu accumsan luctus at vitae urna. Vestibulum ante ipsum primis in faucibus.</p>
+                    <h4>{{about.service3H4}}</h4>
+                    <p>{{about.service3P3}}</p>
                 </div>
             </div>
         </div>

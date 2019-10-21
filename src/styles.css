@@ -132,7 +132,7 @@ p {
   height: 80px;
   margin: 0 auto;
   z-index: 1000;
-  top: 30px;
+  top: 0px;
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;

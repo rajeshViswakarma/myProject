@@ -1,66 +1,25 @@
+<app-navigation></app-navigation>
 <section id="portfolio" class="portfolio-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
-                    <h4>What We Can Do Else</h4>
-                    <p>Aliquam neque neque, commodo in euismod id, lobortis in lacus. Duis interdum sagittis velit, fermentum tincidunt lectus. Nam ornare turpis.</p>
+                    <h4>{{gallery.title}}</h4>
+                    <p>{{gallery.description}}</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div id="owl-portfolio" class="owl-carousel owl-theme imageGallery1">
-                <div class="item">
+                
+                <div class="item" *ngFor = "let galleryItem of gallery.gallerySlider">
                     <div class="portfolio-item">
-                        <a href="../assets/img/first-portfolio-big.jpg" title="">
-                          <img src="../assets/img/first-portfolio-item.jpg" alt="Gallery image 1" /></a>
+                        <a href="{{galleryItem.imgLink}}" title="">
+                          <img src="{{galleryItem.img}}" alt="Gallery image 1" /></a>
+                          <h3>{{galleryItem.title}}</h3>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="../assets/img/second-portfolio-big.jpg" title=""><img src="../assets/img/second-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="../assets/img/third-portfolio-big.jpg" title=""><img src="../assets/img/third-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="../assets/img/fourth-portfolio-big.jpg" title=""><img src="../assets/img/fourth-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="../assets/img/first-portfolio-big.jpg" data-lightbox="image-1"><img src="../assets/img/first-portfolio-item.jpg"></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="../assets/img/second-portfolio-big.jpg" title=""><img src="../assets/img/second-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="../assets/img/first-portfolio-big.jpg" title=""><img src="../assets/img/first-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="../assets/img/third-portfolio-big.jpg" title=""><img src="../assets/img/third-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="../assets/img/first-portfolio-big.jpg" data-lightbox="image-1"><img src="../assets/img/first-portfolio-item.jpg"></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="../assets/img/fourth-portfolio-big.jpg" title=""><img src="../assets/img/fourth-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>

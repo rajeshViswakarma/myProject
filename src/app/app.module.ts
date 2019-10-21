@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutProjectComponent } from './about-project/about-project.component';
@@ -9,7 +8,9 @@ import { OurFeatureComponent } from './our-feature/our-feature.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { AppRoutingModule } from './app-routing.module';
+import { NavigationComponent } from './navigation/navigation.component';
+import {ConfigService} from './config.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,12 +20,14 @@ import { FooterComponent } from './footer/footer.component';
     OurFeatureComponent,
     BlogComponent,
     ContactUsComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
