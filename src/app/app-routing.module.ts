@@ -10,7 +10,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 //import { FooterComponent } from './footer/footer.component';
 //import { AppRoutingModule } from './app-routing.module';
-
+import {NotfoundComponent} from './notfound/notfound.component';
 const routes: Routes = [
   { path: '', redirectTo:'/home', pathMatch:'full' },
   { path: 'home', component: HeaderComponent },
@@ -18,7 +18,9 @@ const routes: Routes = [
   { path: 'portfolio', component: OurGalleryComponent },
   { path: 'blog', component: BlogComponent },
  // { path: 'External', component: HeroesComponent },
-  { path: 'contact-us', component: ContactUsComponent }
+ {path : '404' , component : NotfoundComponent},
+  { path: 'contact-us', component: ContactUsComponent },
+  {path : '**', redirectTo : '/404'},
 
   
 ];
