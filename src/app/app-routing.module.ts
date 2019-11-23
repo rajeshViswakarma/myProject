@@ -11,6 +11,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 //import { FooterComponent } from './footer/footer.component';
 //import { AppRoutingModule } from './app-routing.module';
 import {NotfoundComponent} from './notfound/notfound.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+
 const routes: Routes = [
   { path: '', redirectTo:'/home', pathMatch:'full' },
   { path: 'home', component: HeaderComponent },
@@ -20,6 +24,9 @@ const routes: Routes = [
  // { path: 'External', component: HeroesComponent },
  {path : '404' , component : NotfoundComponent},
   { path: 'contact-us', component: ContactUsComponent },
+  { path: 'login', component: LoginComponent},
+  { path: 'signup', component: SignupComponent},
+  { path : 'employeeList', component : EmployeeListComponent},
   {path : '**', redirectTo : '/404'},
 
   

@@ -12,8 +12,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavigationComponent } from './navigation/navigation.component';
 import {ConfigService} from './config.service';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 // import { PagerComponent } from './pager/pager.component';
 // import { PaginationComponent } from './pagination/pagination.component';
+import { FormsModule,  ReactiveFormsModule } from '@angular/forms';
+
+import {HttpClientModule} from '@angular/common/http';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +33,15 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FooterComponent,
     NavigationComponent,
     NotfoundComponent,
+    SignupComponent,
+    LoginComponent,
+    EmployeeListComponent,
     // PagerComponent,
     // PaginationComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule,HttpClientModule,
+    FormsModule,  ReactiveFormsModule,AppRoutingModule
   ],
   providers: [ConfigService],
   bootstrap: [AppComponent]
