@@ -1,0 +1,13 @@
+
+ {
+    "/api/*": {
+      "target": "https://dalmiaeducation.com/",
+      "secure": false,
+      "logLevel" : "debug" ,
+
+      "pathRewrite": {
+        "^/api": ""
+    }
+
+    }
+  }
