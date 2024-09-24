@@ -12,8 +12,8 @@ const headerOption = {
 })
 export class EmployeeService {
 
-  private _url:string = "./assets/data/employees.json";
-  //private _url:string = "/demo/laravel/api/cms";
+  //private _url:string = "./assets/data/employees.json";
+  private _url:string = "https://jsonplaceholder.typicode.com/todos/";
   constructor(private http : HttpClient) { }
 
   getEmployees() : Observable<IEmployee[]>{

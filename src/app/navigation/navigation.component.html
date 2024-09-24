@@ -13,15 +13,15 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a routerLink="/top" class="navbar-brand"><img src="{{logo}}" alt="" width="120" /> </a>
+                                <a routerLink="/about" class="navbar-brand"><img src="{{logo}}" alt="" width="120" /> </a>
                                 <div id="main-nav" class="collapse navbar-collapse">
                                     <ul class="menu-first nav navbar-nav" style="margin-right: 20px;">
-                                        <li (click)= "getActiveTab('home')" [class.active]="activetab ==='home'"><a routerLink="/">Home</a></li>
-                                        <li (click)= "getActiveTab('about')" [class.active]="activetab ==='about'"><a routerLink="/about">About Us</a></li>
-                                        <li (click)= "getActiveTab('portfolio')"[class.active]="activetab ==='portfolio'"><a routerLink="/portfolio">Portfolio</a></li>
-                                        <li (click)= "getActiveTab('blog')" [class.active]="activetab ==='blog'"><a routerLink="/blog">Blog Entries</a></li>
+                                        <li><a routerLink="/about">Home</a></li>
+                                        <li><a routerLink="/about">About Us</a></li>
+                                        <li><a routerLink="/portfolio">Portfolio</a></li>
+                                        <li><a routerLink="/blog">Blog Entries</a></li>
                                         <li><a href="#" class="external" target="_parent" rel="nofollow">External</a></li> 
-                                        <li (click)= "getActiveTab('contact-us')" [class.active]="activetab ==='contact-us'"><a routerLink="/contact-us">Contact</a></li>                                 
+                                        <li><a routerLink="/contact-us">Contact</a></li>                                 
                                         <li><a routerLink="/login">Login</a></li>
                                         <li><a routerLink="/signup">Sign up</a></li>
                                         <li><a routerLink="/employeeList">Employee List</a></li>

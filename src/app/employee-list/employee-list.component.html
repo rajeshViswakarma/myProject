@@ -5,15 +5,13 @@
     <table width="100%" style="border: 1px solid #ddd;" class="table text-center data-table">
         <tr>
             <th class="text-center">ID</th>
-            <th class="text-center">TITLE</th>
-            <th class="text-center">NAME</th>
-            <th class="text-center">AGE</th>
+            <th class="text-left">Title</th>
         </tr>
     <tr *ngFor="let employee of employees">
         <td>{{employee.id}}</td>
-        <td> {{employee.title}}</td> 
-        <td>{{employee.name}}</td>
-        <td> {{employee.age}}</td>
+        <td class="text-left"> {{employee.title}}</td> 
+        <!-- <td>{{employee.name}}</td>
+        <td> {{employee.age}}</td> -->
        
     </tr>
     </table>

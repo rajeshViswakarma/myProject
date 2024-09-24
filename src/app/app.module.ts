@@ -14,12 +14,11 @@ import {ConfigService} from './config.service';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
-// import { PagerComponent } from './pager/pager.component';
-// import { PaginationComponent } from './pagination/pagination.component';
 import { FormsModule,  ReactiveFormsModule } from '@angular/forms';
 
 import {HttpClientModule} from '@angular/common/http';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { CurdComponent } from './curd/curd.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +35,7 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     SignupComponent,
     LoginComponent,
     EmployeeListComponent,
+    CurdComponent,
     // PagerComponent,
     // PaginationComponent
   ],
